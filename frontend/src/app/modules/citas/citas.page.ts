@@ -252,7 +252,7 @@ export class CitasPage {
         this.refresh();
       },
       error: err => {
-        if (err?.status === 409) this.snack.open('Esa hora ya está reservada para ese médico', 'OK', { duration: 3500 });
+        if (err?.status === 409) this.snack.open('Esa hora ya está reservada para ese médico: '+v.medicoId, 'OK', { duration: 3500 });
         else this.snack.open('Error al guardar', 'OK', { duration: 2500 });
       }
     });
