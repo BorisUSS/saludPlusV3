@@ -11,7 +11,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   standalone: true,
   imports: [CommonModule, MatCardModule, MatChipsModule, MatFormFieldModule, MatSelectModule, MatProgressBarModule],
   template: `
-  <div class="page">
+  <div class="page mobileClass">
     <mat-card class="card">
       <mat-card-title>Listado de médicos SaludPlus</mat-card-title>
       <mat-card-content>
@@ -25,7 +25,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
         <mat-progress-bar *ngIf="loading()" mode="indeterminate"></mat-progress-bar>
 
-        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap:12px; margin-top:12px;">
+        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(640px, 1fr)); gap:12px; margin-top:12px;">
           <mat-card *ngFor="let d of doctors()">
             <mat-card-title style="font-size:16px;">{{d.nombre}}</mat-card-title>
             <mat-card-subtitle>{{d.especialidad}}</mat-card-subtitle>
