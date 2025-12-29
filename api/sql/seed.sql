@@ -6,6 +6,7 @@ FROM (VALUES
   ('Dr. Felipe Muñoz', 'Traumatología'),
   ('Dra. Antonia Pérez', 'Dermatología'),
   ('Dr. Martín Silva', 'Cardiología'),
-  ('Dra. Javiera Soto', 'Pediatría')
+  ('Dra. Javiera Soto', 'Pediatría'),
+  ('Dra. Boris Fuentes Cisterna', 'Informatico DR PC')
 ) AS x(nombre, especialidad)
 WHERE NOT EXISTS (SELECT 1 FROM doctors);
