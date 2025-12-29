@@ -13,7 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   template: `
   <div class="page">
     <mat-card class="card">
-      <mat-card-title>Listado de médicos</mat-card-title>
+      <mat-card-title>Listado de médicos SaludPlus</mat-card-title>
       <mat-card-content>
         <mat-form-field appearance="outline" style="width:320px; margin-top:12px;">
           <mat-label>Especialidad</mat-label>
