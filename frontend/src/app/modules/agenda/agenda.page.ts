@@ -168,7 +168,7 @@ export class AgendaPage {
     this.apptApi.create({ pacienteNombre: paciente, medicoId: did, inicio: dt.toISOString(), estado: 'CONFIRMADA' as any })
       .subscribe({
         next: _ => {
-          this.snack.open('Cita registrada', 'OK', { duration: 2000 });
+          this.snack.open('Cita registrada para paciente:'+ paciente, 'OK', { duration: 2000 });
           this.loadWeekAvailability();
         },
         error: err => {
